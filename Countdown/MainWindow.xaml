@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Countdown"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="Countdown"
+        WindowStyle="None"
+        WindowState="Normal"
+        WindowStartupLocation="Manual" Left="0" Top="60"
+        AllowsTransparency="True"
+        Background="Transparent"
+        SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False"
         
+        Focusable="False">
+    <Grid>
+        <Label x:Name="Time" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Foreground="White" FontSize="60">
+            <InlineUIContainer>
+                <TextBlock x:Name="tb"  TextWrapping="Wrap">
+                    <Run x:Name="days" Text="days" Foreground="LawnGreen"/>
+                    <InlineUIContainer>
+            			<TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text=":"/>
+            		</InlineUIContainer>
+                    <InlineUIContainer>
+			            <TextBlock x:Name="hours" TextWrapping="Wrap" Text="hrs"/>
+		            </InlineUIContainer>
+                    <InlineUIContainer>
+            			<TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text=":"/>
+            		</InlineUIContainer>
+                    <InlineUIContainer>
+            			<TextBlock x:Name="mins" TextWrapping="Wrap" Text="mins"/>
+            		</InlineUIContainer>
+                    <InlineUIContainer>
+            			<TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text=":"/>
+            		</InlineUIContainer>
+                    <InlineUIContainer>
+            			<TextBlock x:Name="secs" TextWrapping="Wrap" Text="secs" Foreground="Red"/>
+            		</InlineUIContainer>
+                </TextBlock>
+            </InlineUIContainer>
+        </Label>
+
     </Grid>
 </Window>
